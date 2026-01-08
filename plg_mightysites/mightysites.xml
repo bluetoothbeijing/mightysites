@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_MIGHTYSITES</name>
+	
+	<author>AlterBrains</author>
+	<copyright>(C) 2009-2012 AlterBrains. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alterbrains@gmail.com</authorEmail>
+	<authorUrl>http://alterbrains.com</authorUrl>
+	
+	<creationDate>12/03/2012</creationDate>
+	<version>2.1.5</version>
+	<description>PLG_SYSTEM_MIGHTYSITES_DESC</description>
+	
+	<files>
+		<filename plugin="mightysites">mightysites.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<scriptfile>mightysites.script.php</scriptfile>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_mightysites.ini</language>
+		<language tag="en-GB">en-GB.plg_system_mightysites.sys.ini</language>
+	</languages>
+	
+	<config/>
+</extension>

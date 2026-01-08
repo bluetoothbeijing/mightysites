@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_CONTENT_FILTER_SEARCH_DESC"
+			hint="JSEARCH_FILTER"
+		/>
+		<field
+			name="type"
+			type="list"
+			label=""
+			description=""
+			onchange="this.form.submit();"
+			>
+			<option value="">COM_MIGHTYSITES_JOPTION_SELECT_ORIGIN</option>
+			<option value="1">COM_MIGHTYSITES_DATABASE_ORIGIN_SITE</option>
+			<option value="2">COM_MIGHTYSITES_DATABASE_ORIGIN_DATABASE</option>
+		</field>
+	</fields>
+
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_CONTENT_LIST_FULL_ORDERING"
+			description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="a.id ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="a.domain ASC">COM_MIGHTYSITES_HEADING_DATABASE_TITLE_ASC</option>
+			<option value="a.domain DESC">COM_MIGHTYSITES_HEADING_DATABASE_TITLE_DESC</option>
+			<option value="a.type ASC">COM_MIGHTYSITES_HEADING_DATABASE_ORIGIN_ASC</option>
+			<option value="a.type DESC">COM_MIGHTYSITES_HEADING_DATABASE_ORIGIN_DESC</option>
+			<option value="a.db ASC">COM_MIGHTYSITES_HEADING_DATABASE_NAME_ASC</option>
+			<option value="a.db DESC">COM_MIGHTYSITES_HEADING_DATABASE_NAME_DESC</option>
+			<option value="a.dbprefix ASC">COM_MIGHTYSITES_HEADING_DATABASE_PREFIX_ASC</option>
+			<option value="a.dbprefix DESC">COM_MIGHTYSITES_HEADING_DATABASE_PREFIX_DESC</option>
+			<option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_CONTENT_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>
